@@ -6,10 +6,10 @@ Platform provides a simple interface to submit the source code files and it will
 Services provided by the platform:
 1. Authentication/Authrorization and light-session management via token is inbuilt provided by the platform.
 2. Automatic load balancing (spawning more processes of a service) is also provided and is based on the incoming traffic for a service. Load is distributed on a number of machines, each being part of the whole system.
-	a) Load Balancing can happen at Hardware level (provisioning more machines at the runtime) and at the
-	Service level too (spawning more instances of the same service).
-	b) This functionality makes it a highly scalable. If load increases machine and service instances are provisioned 
-	and as soon as it drops, instances are relieved to make it cost efficient. 
+	a) Load Balancing can happen at Hardware level (provisioning more machines at 
+	   runtime) and at the Service level too (spawning more instances of the same service).
+	b) This functionality makes it a highly scalable. If load increases machine and service 
+	   instances are provisioned and as soon as it drops, instances are relieved to make it cost efficient. 
 3. Logging service provides the app-developer a seamless interface to log all the events occuring to his service.
 4. SendMail service is an easy to use service to send an emal. 
 
@@ -27,12 +27,12 @@ Platform extensively uses Messaging Queues for inter-component communication. We
 User functions or services are ran inside docker containers which make them feel the isolation and simulatenously provides the much needed security.  
 Various components of the platform:
 1. API gateway - the gateway which listens to all the service requests (listens to all service end-points)
-2. Load Balancer - Periodically checks and manages the loads on machines as well as services. Flexibly scales the service 
-and machine instances
-3. Service Life Cycle Manager - Manages the whole lifecycle of a service - from initialization to call and then cleanup 
-after its completion
-4. Server Life Cycle Manager - Manages the while cycle of a server, provisions a new machine if needs and shuts one down 
-if not needed anymore
+2. Load Balancer - Periodically checks and manages the loads on machines as well as services. 
+   Flexibly scales the service and machine instances
+3. Service Life Cycle Manager - Manages the whole lifecycle of a service - from initialization 
+   to call and then cleanup after its completion
+4. Server Life Cycle Manager - Manages the while cycle of a server, provisions a new machine 
+   if needs and shuts one down if not needed anymore
 5. Monitoring Manager - Monitors the machines and MQs and gather stats to be used in decision making of the load balancer
 6. Deployment Manager - Handles the deployment of user (App-developer) services onto the platform
 
