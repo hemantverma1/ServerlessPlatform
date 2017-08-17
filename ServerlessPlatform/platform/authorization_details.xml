@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<authorized_users>
+	<user username="sid">
+		<FileService>true</FileService>
+		<SvcA>true</SvcA>
+		<ClimateService>true</ClimateService>
+		<SendMailSSL>true</SendMailSSL>
+		<ForecastService>true</ForecastService>
+		<PollutionService>true</PollutionService>
+	</user>
+	<user username="jayant">
+		<FileService>true</FileService>
+		<DataService>true</DataService>
+	</user>
+	<user username="vikas">
+		<FileService>true</FileService>
+		<DataService>true</DataService>
+	</user>
+</authorized_users>
