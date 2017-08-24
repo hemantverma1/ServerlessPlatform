@@ -39,3 +39,9 @@ Various components of the platform:
 Why is it called serverless?
 Platform itself scales up if needed. There aren't any specified servers where the platform might always be running all the time - it varies according to the traffic. It creates an illusion as if the service is not at all running on a server - and hence the name serverless. 
 
+Contributors:
+https://github.com/kanishtha
+https://github.com/Btanwani77
+https://github.com/vinigarg
+https://github.com/Dhawnit
+https://github.com/hemantverma1
